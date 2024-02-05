@@ -31,6 +31,12 @@ public class BasicCalculator1
     {
         return(op1/op2);
     }
+    public float square(float op1){
+        return(op1*op1);
+    }
+    public float cube(float op1){
+        return(op1*op1*op1);
+    }
 }
 public static void main(String[] args)
 {
@@ -48,4 +54,10 @@ public static void main(String[] args)
 
     float div_result=calc.division(op1,op2);
     System.out.println("Result of Divison is:"+div_result);
+
+    float square_result=calc.square(op1);
+    System.out.println("Result of squaring is:"+square_result);
+
+    float cube_result=calc.cube(op1);
+    Sytem.out.println("Result of cubing is:"+cube_result);
 }
